@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payments-app
+  namespace: payments
+data:
+  DB_URL: ${SPRING_DATASOURCE_URL}
